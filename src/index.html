@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo API</title>
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fefefe;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            flex: .8;
+            background: white;
+            border-radius: .5rem;
+            padding: 0;
+            margin: 1rem;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+
+        h1 {
+            background: #cc0000;
+            margin: 0;
+            padding: .5rem;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+            color: #fefefe;
+            text-align: center;
+        }
+
+        dl {
+            margin: .5rem;
+        }
+
+        dd {
+            margin-bottom: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Todo-Api Endpoints:</h1>
+        <dl>
+            <dt>
+                <strong>GET</strong>
+                <code>/api/todolist</code>
+            </dt>
+            <dd>Returns a list of all todos</dd>
+            <dt>
+                <strong>POST</strong>
+                <code>/api/todolist</code></dt>
+            <dd>Requires a JSON body. This data is added to the Todos</dd>
+            <dt>
+                <strong>GET</strong>
+                <code>/api/todo/:id</code>
+            </dt>
+            <dd>Returns a JSON-representation of the todo with <i>:id</i></u></dd>
+            <dt>
+                <strong>DELETE</strong>
+                <code>/api/todo/:id</code>
+            </dt>
+            <dd>Deletes a todo with <i>:id</i></dd>
+        </dl>
+    </main>
+</body>
+
+</html>
